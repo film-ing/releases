@@ -1,6 +1,6 @@
 # Film-ing 개인정보 처리방침
 
-시행일: 2026년 10월 11일 · 이전 판: [2026년 10월 11일 판(“개인정보 안내”)](https://github.com/film-ing/releases/blob/bd0ec38f5c9fbfd8a7cb5378cecdd1a398f902c7/PRIVACY.md)
+시행일: 2026년 10월 12일 · 이전 판: [2026년 10월 11일 시행 판](https://github.com/film-ing/releases/blob/f4f0a189ffc5ba35c1bf5199153c5124e86048a9/PRIVACY.md) · [그 전 판(“개인정보 안내”)](https://github.com/film-ing/releases/blob/bd0ec38f5c9fbfd8a7cb5378cecdd1a398f902c7/PRIVACY.md)
 
 Film-ing 은 **내 PC 안에서만 동작하는 프로그램**입니다. 사진과 정리 기록은 어디로도 보내지 않습니다.
 Film-ing 개발자(이하 “개발자”)가 이용자의 개인정보를 받는 경우는 **이용자가 “의견 보내기”를 직접 누를 때 하나뿐**입니다.
@@ -9,8 +9,9 @@ Film-ing 개발자(이하 “개발자”)가 이용자의 개인정보를 받�
 > **English summary:** Film-ing never uploads your photos or library records, and has no accounts, ads, analytics or tracking.
 > The developer receives personal data only when you send feedback: your message, an optional reply e-mail address and, if you
 > leave it on, app/Windows version, screen size and photo/roll counts. Feedback is relayed by Google Apps Script and stored in
-> the developer's Gmail (Google LLC, servers in the USA and elsewhere). It is used only to fix the app and reply to you, and
-> deleted 1 year after receipt (reply e-mail addresses: 1 year after the conversation ends). The update check (GitHub) and
+> the developer's Gmail (Google LLC, servers in the USA and elsewhere). A reply e-mail address is collected only if you tick the
+> consent box. Feedback is used only to fix the app and reply to you; it is moved to Gmail's trash 1 year after the last message
+> of the conversation and permanently deleted by Gmail 30 days later. The update check (GitHub) and
 > “Show on map” (OpenStreetMap) are requests your own PC/browser makes directly to those services; the developer receives
 > nothing from them. To access, correct or delete your data, write to filmingapp.official@gmail.com.
 
@@ -32,21 +33,23 @@ Film-ing 개발자(이하 “개발자”)가 이용자의 개인정보를 받�
 | 항목 | 필수/선택 | 내용 | 목적 |
 |---|---|---|---|
 | 종류 · 내용 | 필수 | 문제 신고 / 기능 제안 / 기타, 직접 쓴 글(5~4000자) | 문제 확인·프로그램 개선 |
-| 답장 받을 메일 | **선택** (비워 둠) | 적으면 그 주소로 답장 | 답장 |
+| 답장 받을 메일 | **선택** (비워 둠) | 적으면 그 주소로 답장. 적을 때는 의견 창에서 **수집·이용과 국외 이전 동의**를 직접 체크해야 보낼 수 있음(기본 해제) | 답장 |
 | 환경 정보 | 선택 (기본 켜짐, 끌 수 있음) | 앱 버전, 윈도우 버전, 화면 크기, 사진 수, 롤 수 — **숫자만** | 문제 재현 |
 | 최근 오류 기록 | 선택 (기본 꺼짐) | `logs/app.log` 의 오류 부분. 사용자 이름·폴더 경로·파일 이름·메일 주소를 가린 뒤 화면에 보여 주고, **이대로 보내기**를 눌러야만 보냄 | 문제 원인 찾기 |
-| 자동으로 함께 가는 값 | 필수 | 앱 버전, 접수 번호, 보낸 시각(내 PC 시각과 시간대), 자동 입력(스팸) 판단용 값(창을 연 뒤 보내기까지 걸린 초, 사람에게는 보이지 않는 빈 칸), 보내는 쪽별 하루 한도를 세는 **임의 번호**(무작위 값 — 사람이나 컴퓨터를 알아볼 수 없음) | 중복·스팸·남용 막기 |
+| 자동으로 함께 가는 값 | 필수 | 앱 버전, 접수 번호, 보낸 시각(내 PC 시각과 시간대), 메일을 적은 경우 동의 여부와 동의 문구의 판, 자동 입력(스팸) 판단용 값(창을 연 뒤 보내기까지 걸린 초, 사람에게는 보이지 않는 빈 칸), 보내는 쪽별 하루 한도를 세는 **임의 번호**(무작위 값 — 사람이나 컴퓨터를 알아볼 수 없음) | 중복·스팸·남용 막기 |
 | 인터넷 접속 정보 | 자동 | 보내는 PC 의 **IP 주소와 시각** — 구글 서버가 통신 과정에서 알게 됨. 개발자는 받아 보지 않음 | (통신에 필요) |
 
 - 내용 칸에 **다른 사람의 개인정보나 민감한 정보를 적지 마세요.** 적힌 경우 확인하는 대로 지웁니다.
 - **만 14세 미만**은 답장 받을 메일을 적지 마세요(법정대리인 동의가 필요합니다). 만 14세 미만의 메일 주소임을 알게 되면 바로 지웁니다.
-- 처리 근거: 이용자가 요청한 의견 접수와 답장을 위한 처리(개인정보 보호법 제15조 제1항 제4호)입니다. 선택 항목인 답장 받을 메일은 이용자가 직접 적어 보낸 경우에만 답장 목적으로 씁니다.
+- 처리 근거: 내용·환경 정보 등은 이용자가 요청한 의견 접수와 답장을 위한 처리(개인정보 보호법 제15조 제1항 제4호)입니다.
+  선택 항목인 답장 받을 메일은 의견 창에서 **따로 동의(체크)한 경우에만** 받아 답장 목적으로만 씁니다(같은 법 제15조 제1항 제1호, 국외 이전은 제28조의8 제1항 제1호).
+  동의하지 않아도 메일 칸을 비우면 의견은 그대로 보낼 수 있습니다. 동의 기록(동의 여부·문구의 판·시각)은 받은 의견 메일에 함께 남습니다.
 
 ## 3. 보유 기간
 
 | 무엇 | 어디에 | 얼마나 |
 |---|---|---|
-| 받은 의견 메일(내용·환경 정보·오류 기록·접수 번호) | 개발자 Gmail | 받은 날부터 **1년** 뒤 지움. 지워 달라고 하면 바로 지움 |
+| 받은 의견 메일(내용·환경 정보·오류 기록·접수 번호) | 개발자 Gmail | 받은 날부터 **1년** 뒤 지움(답장을 주고받았다면 마지막 메일부터 1년). 지워 달라고 하면 바로 지움 |
 | 답장 받을 메일 주소 | 개발자 Gmail (받은 의견 메일·주고받은 답장 메일) | 답장을 마친 날부터 **1년** 뒤 지움 (그 전에 지워 달라고 하면 바로 지움) |
 | 중복·한도 판단용 값(접수 번호, 내용의 해시값, 임의 번호, 날짜별 건수) | 구글 앱스 스크립트 캐시·속성 | **6시간**(캐시), 날짜별 건수는 다음 날 지움 |
 | 보내지 못한 의견 | **내 PC** 의 정리 기록 폴더 `outbox` | 보내지면 바로 지움. 최대 14일·12번까지 다시 보내 본 뒤 멈추며, 의견 창에서 언제든 지울 수 있음 |
@@ -55,8 +58,9 @@ Film-ing 개발자(이하 “개발자”)가 이용자의 개인정보를 받�
 
 ## 4. 파기 절차와 방법
 
-- 개발자는 **매 분기** 한 번 Gmail 의 의견 메일을 확인해 보유 기간이 지난 메일을 지우고, **휴지통에서도 영구 삭제**합니다.
-- 지워 달라는 요청을 받으면 해당 메일과 주고받은 답장을 모두 영구 삭제하고 결과를 알려 드립니다.
+- 보유 기간이 지난 의견 메일(주고받은 답장 포함)은 **매일 한 번 자동으로**(구글 앱스 스크립트의 시간 트리거) Gmail **휴지통으로 옮기고,
+  휴지통의 메일은 Gmail 이 30일 뒤 영구 삭제**합니다. 개발자는 매 분기 한 번 자동 삭제가 제대로 도는지 확인합니다.
+- 지워 달라는 요청을 받으면 기다리지 않고 해당 메일과 주고받은 답장을 **휴지통에서도 바로 영구 삭제**하고 결과를 알려 드립니다.
 - 종이로 출력하거나 다른 곳에 옮겨 적지 않습니다.
 
 ## 5. 제3자 제공
@@ -71,7 +75,7 @@ Film-ing 개발자(이하 “개발자”)가 이용자의 개인정보를 받�
 |---|---|
 | 이전받는 자 (수탁자) | **Google LLC** (Google Apps Script, Gmail) · 연락처: https://support.google.com/policies (구글 개인정보 문의) |
 | 이전되는 국가 | 미국 및 구글 데이터센터가 있는 국가 |
-| 이전 시기와 방법 | 이용자가 “보내기”를 누를 때(보관함에서 다시 보낼 때 포함) 인터넷(HTTPS, 암호화)으로 전송 |
+| 이전 시기와 방법 | 이용자가 “보내기”를 누를 때(보관함에서 다시 보낼 때 포함) 인터넷(HTTPS, 암호화)으로 전송. 답장 받을 메일은 동의(체크)한 경우만 |
 | 이전되는 항목 | 2절의 항목 (선택 항목은 이용자가 고른 경우만) |
 | 이용 목적 | 의견 접수·메일 전달·보관 (구글은 개발자의 지시에 따라 처리) |
 | 보유·이용 기간 | 3절과 같음 |
