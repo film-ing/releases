@@ -56,7 +56,7 @@ Edge 로 받을 때 “일반적으로 다운로드되지 않는 파일” 안�
 **받은 파일이 진짜인지 확인하려면** (선택): 릴리스 페이지의 `SHA256SUMS.txt` 에 적힌 값과 내 파일의 값을 비교합니다.
 
 ```powershell
-Get-FileHash .\Film-ing-Setup-1.0.0.exe -Algorithm SHA256
+Get-FileHash .\Film-ing-Setup-1.0.1.exe -Algorithm SHA256
 ```
 
 두 값이 같으면 올린 그대로의 파일입니다. 다르면 실행하지 말고 다시 받아 주세요.
@@ -99,7 +99,8 @@ Film-ing 은 사진 파일을 가장 소중하게 다룹니다.
 ## 개인정보
 
 **사진은 어디로도 보내지 않습니다.** 정리 기록(롤·별점·보정)도 내 PC(`%LOCALAPPDATA%\Film-ing`)에만 있습니다. 계정·광고·사용 통계 수집이 없습니다.
-인터넷을 쓰는 것은 세 가지뿐입니다 — 업데이트 확인(동의한 경우), 의견 보내기(직접 보낼 때), 사진 위치를 지도에서 보기(직접 누를 때 브라우저로 OpenStreetMap 을 엶). 무엇이 오가는지는 **[PRIVACY.md](PRIVACY.md)** 에 자세히 적었습니다.
+인터넷을 쓰는 것은 세 가지뿐입니다 — 업데이트 확인(동의한 경우), 의견 보내기(직접 보낼 때), 사진 위치를 지도에서 보기(직접 누를 때 브라우저로 OpenStreetMap 을 엶). 무엇이 오가는지는 **[개인정보 처리방침(PRIVACY.md)](PRIVACY.md)** 에 자세히 적었습니다.
+의견에 답장 받을 메일을 적을 때만 수집·이용 동의를 따로 받고, 받은 의견 메일은 1년 뒤 지웁니다.
 
 ## 자주 쓰는 키
 
@@ -126,13 +127,16 @@ Film-ing 은 사진 파일을 가장 소중하게 다룹니다.
 
 ## 라이선스 · 출처
 
-- Film-ing 은 무료로 내려받아 쓸 수 있습니다. 프로그램의 원본 코드는 이 저장소에 없습니다 — 이 저장소에는 설치 파일과 업데이트 파일, 안내 문서만 올립니다.
+- Film-ing 은 무료로 내려받아 쓸 수 있습니다. 이용 조건은 **[이용 약관(EULA.md)](EULA.md)** 에 있고, 설치할 때 동의 화면으로 보여 드립니다.
+  앞으로 유료 Pro 기능이 생기면 그 기능은 따로 안내하는 구매 조건을 따릅니다.
+- 프로그램의 원본 코드는 이 저장소에 없습니다 — 이 저장소에는 설치 파일과 업데이트 파일, 안내 문서만 올립니다.
 - 함께 들어 있는 구성 요소와 라이선스(설치 폴더의 `THIRD_PARTY_NOTICES.txt` 에 전문):
   - Python (Python Software Foundation License) — 함께 든 OpenSSL·SQLite·zlib·libffi·Tcl/Tk 조건 포함
   - Flask · Werkzeug · Jinja2 · ItsDangerous · Click · MarkupSafe (BSD-3-Clause), Blinker (MIT), colorama (BSD-3-Clause)
   - Pillow (MIT-CMU), NumPy (BSD-3-Clause 외), piexif (MIT), tifffile (BSD-3-Clause), imagecodecs (BSD-3-Clause),
     OpenCV (`opencv-python-headless`, Apache-2.0), defusedxml (PSF License)
   - 글꼴: Courier Prime · Cutive Mono · East Sea Dokdo(동해 독도) · Jost (SIL Open Font License 1.1), Homemade Apple (Apache-2.0)
+  - 파이썬에 함께 든 expat · libmpdec · HACL* · mimalloc (MIT·BSD 계열), Microsoft Visual C++ 런타임, 화면 아이콘 일부 Lucide (ISC) / Feather (MIT)
 - 일부 기능의 아이디어는 **Grainy** (pastorius9, MIT License) 에서 얻었습니다 — 창이 뒤에 있어도 느려지지 않게 하기, 클리핑 표시, 지난 설정으로 내보내기,
   흑백 저장·디더링, 테두리 자동 자르기, 자동 색, 필름 색온도 변환, 새 사진 자동 가져오기, 바뀐 폴더 찾기, 백업 검사, 먼지·흠집 찾기.
   코드는 가져오지 않고 Film-ing 구조에 맞게 새로 작성했습니다.
