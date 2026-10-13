@@ -5,7 +5,8 @@
 
 > **English:** Film-ing is a free Windows photo library for film photographers — import lab scans, organize them by roll,
 > cull, edit non-destructively, and print contact sheets. Everything stays on your PC; your original files are never damaged.
-> Requires Windows 10/11 (64-bit) and Microsoft Edge. Download the installer from [Releases](../../releases/latest).
+> Requires Windows 10/11 (64-bit). The window uses the Microsoft Edge WebView2 Runtime that comes with Windows 11 and most
+> Windows 10 PCs (without it, Film-ing opens in Microsoft Edge). Download the installer from [Releases](../../releases/latest).
 
 ![라이브러리 — 롤별로 묶어 보기](images/library.png)
 
@@ -64,7 +65,7 @@ Get-FileHash .\Film-ing-Setup-1.0.2.exe -Algorithm SHA256
 ### 시스템 요구
 
 - **윈도우 10 또는 11, 64비트**
-- **Microsoft Edge** (윈도우에 기본으로 들어 있음 — 프로그램 창을 Edge 의 앱 창으로 엽니다. 주소창·탭 없는 전용 창이며, 평소 쓰는 Edge 설정과 섞이지 않습니다)
+- **Microsoft Edge WebView2 런타임** (윈도우 11 에 기본으로 들어 있고 윈도우 10 도 대부분 설치되어 있음 — Film-ing 창을 이것으로 엽니다. 주소창·탭 없는 자체 창이며, 평소 쓰는 Edge 설정과 섞이지 않습니다. 없는 PC 에서는 예전처럼 Microsoft Edge 의 앱 창으로 엽니다)
 - 디스크: 프로그램 약 250MB + 정리 기록(미리보기·백업 포함, 사진 1000장에 수백 MB 정도)
 - 인터넷은 필요 없습니다. 업데이트 확인과 의견 보내기, “지도에서 보기”를 쓸 때만 씁니다.
 
